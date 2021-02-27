@@ -9,7 +9,8 @@ import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/plugin_api.dart';
 import 'package:latlong/latlong.dart';
-
+export 'package:flutter_floating_map_marker_titles_core/controller/fmto_controller.dart';
+export 'package:flutter_floating_map_marker_titles_core/model/floating_marker_title_info.dart';
 class FlutterMapWithFMTO extends AbstractMapViewWrapper<_FlutterMapMVI> {
   final MapOptions _mapOptions;
   final List<LayerOptions> _layers;
