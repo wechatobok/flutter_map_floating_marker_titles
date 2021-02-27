@@ -16,6 +16,7 @@ enum FloatingMarkerGravity {
   top,
   right,
   bottom,
+  center,
 }
 
 class FloatingMarkerPlacementPolicy {
@@ -214,6 +215,10 @@ class FMTOController {
       case FloatingMarkerGravity.bottom:
         viewX = viewX - width / 2;
         viewY = viewY + fmtoOptions.titlePlacementPolicy.margin;
+        break;
+      case FloatingMarkerGravity.center:
+        viewX = viewX - width / 2;
+        viewY = viewY - height / 2;
         break;
     }
     return Offset(viewX, viewY);
